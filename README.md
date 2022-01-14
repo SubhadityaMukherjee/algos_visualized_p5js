@@ -5,4 +5,5 @@
         - Javascript at the back
 
 ## How do I see them?
-- Just open index.html
+- Clone the repository
+- Just open index.html in the respective folders

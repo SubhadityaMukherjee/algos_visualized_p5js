@@ -4,12 +4,13 @@ float[][] field;
 int rez = 40;
 int cols, rows;
 int ler = 1;
+
 void setup() {
   size(1280, 720);
   cols = 1 + width / rez;
   rows = 1 + height / rez;
   field = new float[cols][rows];
-  
+  randomSeed(0); //reproducability
   for (int i = 0; i < cols; i++) {
     for (int j = 0; j < rows; j++) {
       field[i][j] = floor(random(2));
@@ -76,7 +77,7 @@ void draw() {
       case 4:  
         line(a, b);
         break;
-      case 5:  
+      case 5:  //AMB
         line(a, d);
         line(b, c);
         break;
@@ -92,7 +93,7 @@ void draw() {
       case 9:  
         line(a, c);
         break;
-      case 10: 
+      case 10: //AMB
         line(a, b);
         line(c, d);
         break;
