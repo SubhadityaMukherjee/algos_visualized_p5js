@@ -8,6 +8,7 @@ function setup(){
     cols=1 + width / rez;
     rows=1 + height / rez;
     field=processing2jsNewNDimArray([cols, rows]);
+    randomSeed(0);
     for(let i = 0;i < cols;i++) {
         for(let j = 0;j < rows;j++) {
             field[i][j]=floor(random(2));
